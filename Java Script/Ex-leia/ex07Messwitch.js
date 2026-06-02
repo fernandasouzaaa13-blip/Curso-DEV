@@ -1,5 +1,5 @@
 const leia = require("prompt-sync")()
-let mes = leia("Digite um mês: ")
+let mes = Number(leia("Digite o número do mês: "))
 
 switch(mes){
     case 1: 
@@ -38,5 +38,7 @@ switch(mes){
     case 12: 
     console.log("Dezembro")
     break;
+    default:
+        console.log("Mês inválido")
 }
 
