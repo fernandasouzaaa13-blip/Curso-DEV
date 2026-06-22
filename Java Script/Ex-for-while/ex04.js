@@ -1,5 +1,5 @@
-let precos = [10.50, 25.00, 39.90];
+let precos = [10.5, 25.0, 39.9];
 
-precos.forEach(function(preco) {
-    console.log(preco);
+precos.forEach((preco) => {
+  console.log(preco);
 });

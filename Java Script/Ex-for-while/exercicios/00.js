@@ -1,6 +1,6 @@
 let variavel = valorInicial;
 
 while (condicao) {
-    // código
+    console.log(variavel)
     variavel++;
 }
