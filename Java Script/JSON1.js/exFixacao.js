@@ -29,24 +29,34 @@ const alunos =[
 },
 
 ]; 
-alunos.filter(aluno=>aluno.estado === "PR")
-console.log(alunos);
-//Mostrando o tipo do dado
-console.log(typeof alunos);
-alunos.find(aluno=>aluno.nome=== "Fernanda")
-console.log(alunos);
-//Mostrando o tipo do dado
-console.log(typeof alunos);
+// Filtra os alunos que moram no estado "PB"
+const alunosPB = alunos.filter(aluno => aluno.estado === "PB");
+// Exibe no console os alunos encontrados
+console.log(alunosPB);
+// Mostra o tipo de dado retornado pelo filter()
+console.log(typeof alunosPB);
 
-alunos.some(aluno=>aluno.estado === "PR")
-console.log(alunos);
-//Mostrando o tipo do dado
-console.log(typeof alunos);
+// Procura o primeiro aluno com o nome "Fernanda"
+const aluna = alunos.find(aluno => aluno.nome === "Fernanda");
+// Exibe a aluna encontrada
+console.log(aluna);
+// Mostra o tipo de dado retornado pelo find()
+console.log(typeof aluna);
 
-alunos.map(aluno=>aluno.estado === "PR")
-console.log(alunos);
-//Mostrando o tipo do dado
-console.log(typeof alunos);
+// Verifica se existe algum aluno do estado "PB"
+const existePB = alunos.some(aluno => aluno.estado === "PB");
+// Exibe o resultado (true ou false)
+console.log(existePB);
+// Mostra o tipo de dado retornado pelo some()
+console.log(typeof existePB);
+
+// Cria um novo array informando se cada aluno é do estado "PB"
+const resultadoMap = alunos.map(aluno => aluno.estado === "PB");
+// Exibe o novo array
+console.log(resultadoMap);
+// Mostra o tipo de dado retornado pelo map()
+console.log(typeof resultadoMap);
+
 
 
 

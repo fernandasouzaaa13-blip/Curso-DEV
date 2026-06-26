@@ -1,7 +1,15 @@
-const texto = '{"nome":"Maria","idade":18,"cidade":"Belo Horizonte"}';
-const pessoa = JSON.parse(texto);
+// Criando o objeto
+const carro = {
+  marca: "BYD",
+  modelo: "Zeus",
+  ano: 2026
+};
 
-console.log(pessoa.nome);
-console.log(pessoa.idade);
+// 1. Utilize Object.keys()
+const propriedades = Object.keys(carro);
 
-console.log(typeof pessoa);
+// 2. Mostre todas as propriedades
+console.log(propriedades);
+
+// 3. Utilize typeof para descobrir o tipo retornado
+console.log(typeof propriedades);
