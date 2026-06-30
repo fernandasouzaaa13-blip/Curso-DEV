@@ -1,0 +1,9 @@
+| Método             | Serve para                                                    |
+| ------------------ | ------------------------------------------------------------- |
+| `JSON.stringify()` | Converte objeto/array → texto JSON                            |
+| `JSON.parse()`     | Converte texto JSON → objeto                                  |
+| `typeof`           | Descobre o tipo da variável                                   |
+| `filter()`         | Filtra elementos do array                                     |
+| `map()`            | Cria um novo array transformando os elementos                 |
+| `find()`           | Retorna o primeiro elemento que atende à condição             |
+| `some()`           | Retorna `true` ou `false` se algum elemento atende à condição |
