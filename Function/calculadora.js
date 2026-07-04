@@ -1,4 +1,4 @@
-const readline= require("readline-sync");
+const readline = require("readline-sync");
 //-----------------------------------------
 // Função responsável por exibir o menu
 //-----------------------------------------
@@ -44,14 +44,40 @@ function dividir(a, b) {
 //Aplicativo princípal
 //*********************
 //chama a função
-menu(5, 3); //chama a função menu
-//Lê a opção escolhida pelo usuaário
+menu(); //chama a função menu
+//Lê a opção escolhida pelo usuário
 let opcao;
-opcao= Number(readline.question("Escolha uma opção"));
+opcao = Number(readline.question("Escolha uma opção"));
 
+do {
+  menu();
+  opcao = readline.questionInt("Escolha uma opção: ");
+  // Caso o usuario escolha sair, encerra o programa
+  if (opcao === 5) {
+    console.log("\nPrograma encerrado.");
+    break;
+  }
+  // Solicita os dois numeros apenas se a opção for válida
+  if (opcao >= 1 && opcao <= 4) {
 
-
-somar(10, 3); //chama a função somar
-subtrair(5, 2); //chama a função subtrair
-multiplicar(5, 5); //chama a função multiplicar
-dividir(10, 2); //chama a função dividir
+    const numero1 = Number(readline.question("Digite o primeiro numero: "));
+    const numero2 = Number(readline.question("Digite o segundo numero: "));
+    // Executa a operação escolhida
+    switch (opcao) {
+      case 1:
+        somar(numero1, numero2);
+        break;
+      case 2:
+        subtrair(numero1, numero2);
+        break;
+      case 3:
+        multiplicar(numero1, numero2);
+        break;
+      case 1:
+        dividir(numero1, numero2);
+        break;
+    }
+  } else {
+    console.log("Opção inválida.");
+  }
+} while (true)
