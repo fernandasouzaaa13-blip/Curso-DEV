@@ -11,23 +11,15 @@ const conta = {
 };
 // Função responsável por mostrar o menu na tela
 function menu() {
-    // Pula uma linha e imprime uma linha de separação
     console.log("\n====================");
     // Mostra o título do menu
     console.log(" MENU DE OPÇÕES");
-    // Mostra outra linha de separação
     console.log("====================");
-    // Mostra a opção 1
     console.log("1 - Consultar saldo");
-    // Mostra a opção 2
     console.log("2 - Depositar");
-    // Mostra a opção 3
     console.log("3 - Sacar");
-    // Mostra a opção 4
     console.log("4 - Ver extrato");
-    // Mostra a opção para sair
     console.log("0 - Sair");
-    // Fecha o menu
     console.log("====================");
 }
 // Função responsável por mostrar o saldo da conta
@@ -73,11 +65,9 @@ function sacar(conta, valor){
           // Mostra mensagem de sucesso
           console.log("Saque realizado com sucesso!");
         }else{
-            // Caso não tenha saldo suficiente
             console.log("Saldo insuficiente!");
         }
     }else{
-        // Caso o valor seja inválido
         console.log("Valor inválido!");
     }
 }
