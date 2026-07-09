@@ -21,10 +21,9 @@ const pedido = {
 
 // Exibe o cardápio
 function exibirCardapio(cardapio) {
-  console.log("\n===== CARDÁPIO =====");
+  console.log(`"\n===== CARDÁPIO ====="`);
   for (let item of cardapio) {
-    console.log(
-      `${VERDE}${item.id} - ${item.nome} - R$ ${item.preco.toFixed(2)}`,
+    console.log(`${item.id} - ${item.nome} - R$ ${item.preco.toFixed(2)}`,
     );
   }
 }
@@ -36,6 +35,7 @@ function adicionarItem(pedido, item, quantidade) {
     quantidade: quantidade,
   });
 }
+
 // Calcula o subtotal
 function calcularSubtotal(pedido) {
   let subtotal = 0;
@@ -46,6 +46,7 @@ function calcularSubtotal(pedido) {
 
   return subtotal;
 }
+
 // Pergunta o tipo de entrega
 function perguntarTipoEntrega() {
   let tipo;
@@ -66,6 +67,7 @@ function calcularTotal(subtotal, tipoEntrega, taxaEntrega) {
   }
   return subtotal;
 }
+
 // Exibe o resumo
 function exibirResumoPedido(pedido) {
   console.log("\n===== RESUMO DO PEDIDO =====");
@@ -85,6 +87,7 @@ function exibirResumoPedido(pedido) {
   }
   console.log(`Total: R$ ${pedido.total.toFixed(2)}`);
 }
+
 // =======================
 // Programa Principal
 // =======================
