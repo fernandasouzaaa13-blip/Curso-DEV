@@ -6,7 +6,7 @@ const conta = {
   saldo: 100,
   extrato: 100,
 };
-console.log(conta);
+console.log("\x1b[32mConta criada com sucesso!\x1b[0m");
 console.log(typeof conta.titular);
 console.log(typeof conta.saldo);
 console.log(typeof conta.extrato);

@@ -12,4 +12,4 @@ const cardapio = [
     preco: 28
   },
 ];
- console.log(cardapio)
+console.log("\x1b[34mCardápio criado!\x1b[0m");
