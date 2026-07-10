@@ -10,7 +10,7 @@ const conta = {
             data: "05/07/2026",
         } ,
         {
-            tipo: "deposito",
+            tipo: "saque",
             valor: 200,
             data: "05/07/2026",
         },
@@ -24,5 +24,5 @@ const conta = {
 }
 
 for (let i = 0; i < conta.extrato.length; i++) {
-    console.log("\x1b[33m" + conta.extrato[i].valor + "\x1b[0m");
+    console.log("\x1b[36m" + conta.extrato[i].tipo + " " + conta.extrato[i].valor + "\x1b[0m");
 }

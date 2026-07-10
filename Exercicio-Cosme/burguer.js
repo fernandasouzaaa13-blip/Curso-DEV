@@ -1,10 +1,6 @@
+ 
+//======= Resolução do Cosme======//
 import readline from "readline-sync";
-
-const BG_CIANO = "\x1b[46m";
-const NEGRITO = "\x1b[1m";
-const VERDE = "\x1b[32m";
-const RESET = "\x1b[0m";
-
 const cardapio = [
   { id: 1, nome: "X-Burguer", preco: 18.0 },
   { id: 2, nome: "X-Salada", preco: 20.0 },
