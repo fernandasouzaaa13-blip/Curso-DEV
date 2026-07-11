@@ -17,7 +17,7 @@ const cardapio = [
 console.log("===============================");
 // Exercício 13  Laços de Repetição
 
-console.log("O nome de cada item é : ");
+console.log("\x1b[32mO Nome de cada item é : \x1b[0m");
 for (let i = 0; i < cardapio.length; i++) {
-  console.log("\x1b[33m" + cardapio[i].nome + "\x1b[0m");
+  console.log("\x1b[34m" + cardapio[i].nome + "\x1b[0m");
 }

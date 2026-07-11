@@ -23,7 +23,7 @@ const conta = {
 };
 const deposito = 100
 if(deposito <= 0 ){
-    console.log("\x1b[31m Valor inválido\x1b[0m");
+    console.log("\x1b[31mValor inválido\x1b[0m");
 }else{
-    console.log("\x1bDepósito realizado\x1b[0m");
+    console.log("\x1b[32mDepósito realizado\x1b[0m");
 }

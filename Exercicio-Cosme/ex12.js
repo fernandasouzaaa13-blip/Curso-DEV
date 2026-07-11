@@ -4,3 +4,4 @@ function avisarSaldoInsuficiente() {
     "\x1b[31m" + "Saldo insuficiente para essa operação." + "\x1b[0m",
   );
 }
+avisarSaldoInsuficiente()

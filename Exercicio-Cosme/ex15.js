@@ -1,4 +1,5 @@
-
+// Exercício 15 Laços de repetição
+// Reutilização do código anterior(com modificações)
 const conta = {
     titular: "Maria Fernanda",
     saldo: 500,
@@ -24,5 +25,5 @@ const conta = {
 }
 
 for (let i = 0; i < conta.extrato.length; i++) {
-    console.log("\x1b[36m" + conta.extrato[i].tipo + " " + conta.extrato[i].valor + "\x1b[0m");
+     console.log("\x1b[33mtipo: " + conta.extrato[i].tipo + "\x1b[0m" + "\n\x1b[32mvalor: " + conta.extrato[i].valor + "\x1b[0m");
 }
