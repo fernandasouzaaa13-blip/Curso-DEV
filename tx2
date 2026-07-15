@@ -1,0 +1,68 @@
+// 1. Crie uma classe chamada Livro com os seguintes atributos: título, autor, ano de publicação e número de páginas.
+// 2. Metodo chamado exibirDados(), que apenas imprime as informações do livro no console.
+// 3. Metodo main() que cria um objeto da classe Livro, atribui valores aos atributos e chama o método exibirDados().
+
+//Definir a classe Livro
+public class Livro{
+    // Atributos (caracteristicas do livro)
+    private String titulo;
+    private String autor;
+    private int anoDePublicacao;
+    private int paginas;
+
+    // construtor padrão
+    Livro(){
+        titulo = "";
+        autor = "";
+        anoDePublicacao = 0;
+        paginas = 0;
+    }
+
+    // cosntrutor com parametros
+    Livro(String titulo, String autor, int anoDePublicacao, int paginas){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anoDePublicacao = anoDePublicacao;
+        this.paginas = paginas;
+    }
+
+    // método para exibir dados (exibir os atributos)
+    public void exibirDados(){
+        System.out.println("------DADOS DO LIVRO------");
+        System.out.println("Título: " + this.titulo);
+        System.out.println("Autor: " + this.autor);
+        System.out.println("Ano de publicação: " + this.anoDePublicacao);
+        System.out.println("Número de Págias: " + this.paginas);
+        System.out.println("---------------------------");
+    }
+
+
+    // método principal para executar o programa (normalmente escrito em uma class Main())
+    public static void main(String[] args){
+        // criar o objeto livro -> livro1
+        Livro livro1 = new Livro();
+        Livro livro2 = new Livro();
+        Livro livro3 = new Livro();
+        Livro livro4 = new Livro("O Hobbit", "J.R.R. Tolkien", 1937, 310);
+
+        // atribuir valor ao s atributos do objeto livro1
+        livro1.titulo = "Torre negra";
+        livro1.autor = "Stephen King";
+        livro1.anoDePublicacao = 2001;
+        livro1.paginas = 365;
+
+        // atribuir valor aos atributos do objeto livro2
+        livro2.titulo = "O Iluminado";
+        livro2.autor = "Stephen King";
+        livro2.anoDePublicacao = 1977;
+        livro2.paginas = 448;
+
+        // chamar o método
+        livro1.exibirDados();
+        livro2.exibirDados();
+        livro3.exibirDados();
+        livro4.exibirDados();
+    }
+
+}
+
