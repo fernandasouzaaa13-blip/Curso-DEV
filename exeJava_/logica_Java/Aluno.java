@@ -1,6 +1,6 @@
 package logica_Java;
 
-public class Info {
+public class Aluno {
     public static void main(String[] args) {
         String nome = " Maria Fernanda de Souza Giordani";
         String cidade = "Lavras";
