@@ -1,0 +1,189 @@
+=========================
+SCANNER
+=========================
+
+Scanner scanner = new Scanner(System.in);
+
+Cria um Scanner para ler o que o usuário digita.
+
+------------------------------------------------
+
+System.out.print("Digite seu nome: ");
+
+Escreve uma mensagem sem pular linha.
+
+------------------------------------------------
+
+System.out.println("Olá!");
+
+Escreve uma mensagem e pula para a próxima linha.
+
+------------------------------------------------
+
+int idade = scanner.nextInt();
+
+Lê um número inteiro.
+
+------------------------------------------------
+
+double altura = scanner.nextDouble();
+
+Lê um número decimal.
+
+------------------------------------------------
+
+String nome = scanner.next();
+
+Lê apenas uma palavra.
+
+------------------------------------------------
+
+String frase = scanner.nextLine();
+
+Lê uma frase inteira.
+
+------------------------------------------------
+
+scanner.close();
+
+Fecha o Scanner.
+
+=========================
+VARIÁVEIS
+=========================
+
+int idade = 22;
+
+Guarda números inteiros.
+
+------------------------------------------------
+
+double altura = 1.70;
+
+Guarda números decimais.
+
+------------------------------------------------
+
+String nome = "Fernanda";
+
+Guarda textos.
+
+------------------------------------------------
+
+char letra = 'A';
+
+Guarda apenas uma letra ou símbolo.
+
+------------------------------------------------
+
+boolean ligado = true;
+
+Guarda verdadeiro ou falso.
+
+=========================
+IF / ELSE
+=========================
+
+if (idade >= 18) {
+
+}
+
+Executa o código se a condição for verdadeira.
+
+------------------------------------------------
+
+else if (idade == 17) {
+
+}
+
+Verifica outra condição.
+
+------------------------------------------------
+
+else {
+
+}
+
+Executa quando nenhuma condição é verdadeira.
+
+=========================
+SWITCH
+=========================
+
+switch(opcao){
+
+case 1:
+
+break;
+
+case 2:
+
+break;
+
+default:
+
+}
+
+Escolhe uma opção entre várias.
+
+=========================
+FOR
+=========================
+
+for(int i = 0; i < 10; i++){
+
+}
+
+Repete um bloco de código um número determinado de vezes.
+
+=========================
+WHILE
+=========================
+
+while(condicao){
+
+}
+
+Repete enquanto a condição for verdadeira.
+
+=========================
+DO WHILE
+=========================
+
+do{
+
+}while(condicao);
+
+Executa uma vez e depois verifica a condição.
+
+=========================
+OPERADORES
+=========================
+
++  Soma
+
+-  Subtração
+
+*  Multiplicação
+
+/  Divisão
+
+%  Resto da divisão
+
+== Igual
+
+!= Diferente
+
+> Maior
+
+< Menor
+
+>= Maior ou igual
+
+<= Menor ou igual
+
+&& E
+
+|| OU
+
+! NÃO

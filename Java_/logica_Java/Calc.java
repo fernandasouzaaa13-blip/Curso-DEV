@@ -18,8 +18,11 @@ public class Calc {
     System.out.print("Escolha uma opção ");
     int opcao = scanner.nextInt();
 
-    if (opcao == 2){
+    if (opcao == 1){
         System.out.println("Resultado: " + (numero1 + numero2));
+    }
+    if (opcao == 2){
+    System.out.println("Resultado: " + (numero2 - numero1));
     }
     if (opcao !=1 && opcao !=2){
         System.out.println("Opção inválida!");

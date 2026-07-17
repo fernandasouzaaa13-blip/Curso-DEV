@@ -1,0 +1,95 @@
+package → É a pasta onde o programa está guardado.
+
+import → Pega uma ferramenta pronta do Java para usar no programa.
+
+public → Diz que essa parte do código pode ser usada por qualquer lugar.
+
+class → É como criar uma "caixa" onde todo o código vai ficar.
+
+public class → Cria a caixa principal do programa.
+
+static → Permite usar o método sem precisar criar outra coisa antes.
+
+void → Significa que o método faz uma tarefa, mas não devolve nenhum resultado.
+
+main → É o ponto de partida. O programa sempre começa por aqui.
+
+String[] args → Serve para receber informações quando o programa inicia. No começo você quase nunca vai usar.
+
+Scanner → Ferramenta que permite o usuário digitar informações.
+
+new → Cria uma coisa nova.
+
+System.in → Diz que a informação vai vir do teclado.
+
+System.out.print() → Escreve uma mensagem na tela e continua na mesma linha.
+
+System.out.println() → Escreve uma mensagem na tela e vai para a linha de baixo.
+
+nextInt() → Lê um número inteiro que o usuário digitou.
+
+nextDouble() → Lê um número com vírgula.
+
+next() → Lê apenas uma palavra.
+
+nextLine() → Lê uma frase inteira.
+
+int → Guarda números inteiros.
+
+double → Guarda números com casas decimais.
+
+String → Guarda textos.
+
+char → Guarda apenas uma letra ou símbolo.
+
+boolean → Guarda apenas duas respostas: verdadeiro ou falso.
+
+if → Se acontecer isso...
+
+else if → Senão, verifica outra condição.
+
+else → Senão, faz isso.
+
+switch → Escolhe uma opção entre várias.
+
+case → Cada opção dentro do switch.
+
+break → Para aquele caso e sai do switch.
+
+default → Executa quando nenhuma opção foi escolhida corretamente.
+
++ → Soma.
+
+- → Subtração.
+
+* → Multiplicação.
+
+/ → Divisão.
+
+% → Mostra o resto da divisão.
+
+== → É igual?
+
+!= → É diferente?
+
+> → É maior?
+
+< → É menor?
+
+>= → É maior ou igual?
+
+<= → É menor ou igual?
+
+&& → As duas condições precisam ser verdadeiras.
+
+|| → Basta uma das condições ser verdadeira.
+
+! → Inverte o resultado (verdadeiro vira falso e falso vira verdadeiro).
+
+for → Repete várias vezes quando você já sabe quantas vezes quer repetir.
+
+while → Repete enquanto uma condição for verdadeira.
+
+do while → Faz uma vez primeiro e depois pergunta se deve continuar.
+
+scanner.close() → Fecha o Scanner porque ele não será mais usado.
