@@ -1,0 +1,68 @@
+// Resetar cor (volta ao normal)
+System.out.println("\u001B[0mTexto");
+
+// Preto
+System.out.println("\u001B[30mTexto\u001B[0m");
+
+// Vermelho
+System.out.println("\u001B[31mTexto\u001B[0m");
+
+// Verde
+System.out.println("\u001B[32mTexto\u001B[0m");
+
+// Amarelo
+System.out.println("\u001B[33mTexto\u001B[0m");
+
+// Azul
+System.out.println("\u001B[34mTexto\u001B[0m");
+
+// Roxo
+System.out.println("\u001B[35mTexto\u001B[0m");
+
+// Ciano
+System.out.println("\u001B[36mTexto\u001B[0m");
+
+// Branco
+System.out.println("\u001B[37mTexto\u001B[0m");
+
+
+CORES FORTES (Bright)
+// Cinza
+System.out.println("\u001B[90mTexto\u001B[0m");
+
+// Vermelho claro
+System.out.println("\u001B[91mTexto\u001B[0m");
+
+// Verde claro
+System.out.println("\u001B[92mTexto\u001B[0m");
+
+// Amarelo claro
+System.out.println("\u001B[93mTexto\u001B[0m");
+
+// Azul claro
+System.out.println("\u001B[94mTexto\u001B[0m");
+
+// Roxo claro
+System.out.println("\u001B[95mTexto\u001B[0m");
+
+// Ciano claro
+System.out.println("\u001B[96mTexto\u001B[0m");
+
+// Branco brilhante
+System.out.println("\u001B[97mTexto\u001B[0m")
+
+// Dica //Se você vai usar cores com frequência, pode criar uma classe para não precisar decorar os códigos:
+public class Cor {
+    public static final String RESET = "\u001B[0m";
+    public static final String VERMELHO = "\u001B[31m";
+    public static final String VERDE = "\u001B[32m";
+    public static final String AMARELO = "\u001B[33m";
+    public static final String AZUL = "\u001B[34m";
+    public static final String ROXO = "\u001B[35m";
+    public static final String CIANO = "\u001B[36m";
+}
+//Depois é só usar:
+System.out.println(Cor.VERDE + "Programa iniciado!" + Cor.RESET);
+System.out.println(Cor.VERMELHO + "Erro!" + Cor.RESET);
+System.out.println(Cor.AMARELO + "Atenção!" + Cor.RESET);
+
