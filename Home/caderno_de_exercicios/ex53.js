@@ -1,5 +1,5 @@
-//Dado um array de itens de estoque em JSON (com nome, preço e quantidade), desenvolva um script que
-//percorra a lista e gere um relatório exibindo apenas itens com estoque zerado
+//Dado um array de itens de estoque em JSON (com nome, preço e quantidade), desenvolva um script que 
+// percorra a lista e gere um relatório exibindo apenas itens com estoque zerado
 const Eletros = [
   {
     nome: "Garmin",
