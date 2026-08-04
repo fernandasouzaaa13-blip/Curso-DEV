@@ -1,4 +1,4 @@
-package logica_Java.exercicios;
+package Repeticao;
 
 public class Fix2 {
     public static void main(String[] args) {

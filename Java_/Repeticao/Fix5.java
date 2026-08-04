@@ -1,4 +1,4 @@
-package logica_Java.exercicios;
+package Repeticao;
 
 import java.util.Scanner;
 
