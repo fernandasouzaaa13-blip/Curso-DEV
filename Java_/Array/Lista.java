@@ -1,4 +1,3 @@
-package Array;
 
 public class Lista {
     public static void main(String[] args) {
@@ -9,9 +8,13 @@ public class Lista {
             System.out.println(notas[i]);
             soma += notas[i];
         }
+    
         System.out.println("Soma: " + soma);
         media = soma / notas.length;
         System.out.println("Média: " + media);
+
+
+
 
     }
 }
