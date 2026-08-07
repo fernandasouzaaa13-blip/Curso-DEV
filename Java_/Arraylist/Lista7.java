@@ -20,7 +20,7 @@ public class Lista7 {
         // lista novamente
         produtos.remove(2);
         produtos.forEach(System.out::println);
-          System.out.println("=============================");
+        System.out.println("=============================");
         // Exercício 03- Contar produtos -> Ultilize size() para mostrar quantos
         // produtos existem na
         // lista
@@ -49,7 +49,7 @@ public class Lista7 {
          * System.out.println("O Mouse não está na lista");
          */
 
-            System.out.println("=============================");
+        System.out.println("=============================");
         // Exercício 05- Alterar um produto -> Troque "Headset" por "Caixa de Som"
         // utilizando set().
         // Depois imprima a lista
@@ -57,7 +57,7 @@ public class Lista7 {
         produtos.set(3, "Caixa de Som");
         // Percorre a lista e imprime todos os produtos atualizados
         produtos.forEach(System.out::println);
-           System.out.println("=============================");
+        System.out.println("=============================");
 
         // Exercício 06- Mostrar um produto específico -> Utilize get()para mostrar o
         // terceiro produto
@@ -66,6 +66,12 @@ public class Lista7 {
         // Exibe o produto que está na posição 2 da lista (terceiro produto, pois a
         // contagem começa em 0)
         System.out.println("Terceiro produto: " + produtos.get(3));
+
+        // Adicionar um novo produto -> Adicione o produto"Webcam" ao final da lista e
+        // imprima novamente
+        produtos.add("Webcam");
+        System.out.println("=============================");
+        produtos.forEach(System.out::println);
 
     }
 }
