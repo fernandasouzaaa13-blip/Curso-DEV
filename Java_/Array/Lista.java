@@ -1,4 +1,3 @@
-
 public class Lista {
     public static void main(String[] args) {
         int[] notas = { 15, 12, 18, 14, 16 };

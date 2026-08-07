@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Avaliativa1 {
     public static void main(String[] args) {
         ArrayList<String> estoque = new ArrayList<>();
-        System.out.println("========= ESTOQUE DE PRODUTOS ==========");
+        System.out.println("===== ESTOQUE DE PRODUTOS =====\n");
 
         estoque.add("Smartphone-Iphone16");
         estoque.add("Notbook Accer");
@@ -31,3 +31,9 @@ public class Avaliativa1 {
         System.out.println("Total de produtos: " + estoque.size());
     }
 }
+/* 
+estoque.forEach(estoque->{
+    System.out.println(estoque)
+});
+*/
+

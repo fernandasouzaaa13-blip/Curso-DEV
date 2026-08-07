@@ -22,9 +22,9 @@ public class Avaliativa2 {
         // Adição de Macarrão a lista de compra
         compras.add("Macarrão");
         for (int i = 0; i < compras.size(); i++) {
-            compras.get(i);
+            System.out.println(compras.get(i));
         }
         System.out.println("Total de produtos no carrinho de compras: " + compras.size());
-        compras.forEach(System.out::println);
+       
     }
 }
