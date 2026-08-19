@@ -11,7 +11,7 @@ public class Cafe {
         Scanner entrada = new Scanner(System.in);
 
         int opcao;
-        System.out.println("\n===CARDÁPIO DA ROÇA ===");
+        System.out.println("\n===MENU PADÁRIA===");
         // Menu para uma padária
         System.out.println("1- PÃO SOVADO DE MILHO");
         System.out.println("2- ROSCA DE QUEIJO");
@@ -58,7 +58,7 @@ public class Cafe {
                 case 2:
                     System.out.println(" Deseja remover do carrinho:");
                     String remover = entrada.nextLine();
-                    int posicao = menu.indexOf(remover);
+                    int posicao1 = menu.indexOf(remover);
                     if (remover.equalsIgnoreCase("sim") || remover.equalsIgnoreCase("s")) {
                         System.out.println("Item adicionado.");
                     } else if (remover.equalsIgnoreCase("nao") || remover.equalsIgnoreCase("n")
@@ -69,16 +69,14 @@ public class Cafe {
                         System.out.println("Resposta inválida.");
                     }
                     case 3:
-                    System.out.println("Qual cliente você quer alterar:");
+                    System.out.println("Qual produto que você deseja alterar:");
                     String alterar = entrada.nextLine();
-                    int posicao = clientes.indexOf(alterar);
+                    int posicao2 = menu.indexOf(alterar);
 
-                    if (posicao != -1) {
+                    if (posicao2 != -1) {
                         System.out.println("Digite um novo nome:");
                         alterar = entrada.nextLine();
-                        clientes.set(posicao, alterar);
-                    } else {
-                        System.out.println("Cliente não encontrado.");
+                        menu.set(posicao2, alterar);
                     }
 
 
