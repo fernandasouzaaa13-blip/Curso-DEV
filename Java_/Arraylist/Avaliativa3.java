@@ -25,10 +25,10 @@ public class Avaliativa3 {
             System.out.println("\nEscolha uma opção:");
             opcao = entrada.nextInt();
 
-            // Limpa o Enter deixado pelo nextInt()
+            //  Estava dando erro na entrada o netInt deixando um espaço, adicione um Nexline para ler o Enter, sendo limpar o Enter deixado pelo nextInt()
             entrada.nextLine();
 
-            // Executa a opção escolhida no menu
+            // Executa a opção escolhida no menu do cliente
             switch (opcao) {
 
                 // Cadastra um novo cliente
