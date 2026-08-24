@@ -4,13 +4,12 @@ package calculadora;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
 /**
  *
  * @author User
  */
 public class TelaPrincipal extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaPrincipal.class.getName());
 
     /**
@@ -40,6 +39,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton2Subtracao = new javax.swing.JButton();
         jButton3Multiplicacao = new javax.swing.JButton();
         jButton4Divisao = new javax.swing.JButton();
+        jButtonAlterar = new javax.swing.JButton();
+        jButtonLimpar = new javax.swing.JButton();
 
         jScrollPane1.setViewportView(jEditorPane1);
 
@@ -70,6 +71,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton4Divisao.setText("DIVISÃO");
         jButton4Divisao.addActionListener(this::jButton4DivisaoActionPerformed);
 
+        jButtonAlterar.setText("Alterar");
+        jButtonAlterar.addActionListener(this::jButtonAlterarActionPerformed);
+
+        jButtonLimpar.setText("Limpar");
+        jButtonLimpar.addActionListener(this::jButtonLimparActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -77,7 +84,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(91, 91, 91)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jTextFieldValor1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(53, 53, 53)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,18 +92,26 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jTextFieldValor2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(73, 73, 73)
-                                .addComponent(jTextField3Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(77, 77, 77))
+                                .addComponent(jTextField3Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1Soma)
-                        .addGap(58, 58, 58)
-                        .addComponent(jButton2Subtracao)
-                        .addGap(28, 28, 28)
-                        .addComponent(jButton3Multiplicacao)
-                        .addGap(40, 40, 40)
-                        .addComponent(jButton4Divisao)
-                        .addGap(51, 51, 51)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1Soma)
+                                .addGap(58, 58, 58)
+                                .addComponent(jButton2Subtracao)
+                                .addGap(28, 28, 28))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jButtonAlterar)
+                                .addGap(71, 71, 71)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton3Multiplicacao)
+                                .addGap(40, 40, 40)
+                                .addComponent(jButton4Divisao))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(jButtonLimpar)))))
+                .addContainerGap(51, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(122, 122, 122)
                 .addComponent(jLabel2)
@@ -112,10 +127,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addGap(45, 45, 45)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4)
+                        .addComponent(jLabel3)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldValor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -127,7 +143,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addComponent(jButton2Subtracao)
                     .addComponent(jButton3Multiplicacao)
                     .addComponent(jButton4Divisao))
-                .addContainerGap(75, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonAlterar)
+                    .addComponent(jButtonLimpar))
+                .addGap(23, 23, 23))
         );
 
         pack();
@@ -136,14 +156,26 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void jTextFieldValor2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValor2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldValor2ActionPerformed
-
+    // Evento executado quando o botão SUBTRAÇÃO é clicado
     private void jButton2SubtracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2SubtracaoActionPerformed
         // TODO add your handling code here:
+
+        // Declara três variáveis inteiras:
+        // num1 = primeiro número
+        // num2 = segundo número
+        // res = resultado
         int num1, num2, res;
+        // Pega o texto digitado no campo Valor 1
+        // e transforma esse texto em um número inteiro
         num1 = Integer.parseInt(jTextFieldValor1.getText());
+        // Pega o texto digitado no campo Valor 2
+        // e transforma esse texto em um número inteiro 
         num2 = Integer.parseInt(jTextFieldValor2.getText());
-        
+
         res = num1 - num2;
+
+        // Converte o resultado para texto
+        // e coloca esse texto no campo Resultado
         jTextField3Resultado.setText(String.valueOf(res));
     }//GEN-LAST:event_jButton2SubtracaoActionPerformed
 
@@ -152,31 +184,48 @@ public class TelaPrincipal extends javax.swing.JFrame {
         int num1, num2, res;
         num1 = Integer.parseInt(jTextFieldValor1.getText());
         num2 = Integer.parseInt(jTextFieldValor2.getText());
-        
+
         res = num1 * num2;
         jTextField3Resultado.setText(String.valueOf(res));
     }//GEN-LAST:event_jButton3MultiplicacaoActionPerformed
-
+    // Evento executado quando o botão SOMA é clicado
     private void jButton1SomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1SomaActionPerformed
         // TODO add your handling code here:
         int num1, num2, res;
         num1 = Integer.parseInt(jTextFieldValor1.getText());
         num2 = Integer.parseInt(jTextFieldValor2.getText());
-        
+
         res = num1 + num2;
         jTextField3Resultado.setText(String.valueOf(res));
     }//GEN-LAST:event_jButton1SomaActionPerformed
-
+    // Evento executado quando o botão DIVIDIR é clicado
     private void jButton4DivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4DivisaoActionPerformed
-        // TODO add your handling code here:
+        // Variáveis para guardar os números
         int num1, num2;
+        // Variável resultado é float porque a divisão
+        // pode gerar casas decimais
         float res;
+        // Pega o primeiro valor digitado e transforma em inteiro
         num1 = Integer.parseInt(jTextFieldValor1.getText());
         num2 = Integer.parseInt(jTextFieldValor2.getText());
-        
+        // Faz a divisão
+        // (float) permite que o resultado tenha casas decimais
         res = (float) num1 / num2;
+        // Mostra o resultado na tela
         jTextField3Resultado.setText(String.valueOf(res));
     }//GEN-LAST:event_jButton4DivisaoActionPerformed
+
+    private void jButtonAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlterarActionPerformed
+        jLabel1.setText("Minha Calculadora");
+
+    }//GEN-LAST:event_jButtonAlterarActionPerformed
+    // Evento executado quando o botão LIMPAR é clicado
+    private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
+        // Limpa os campos onde foi digitado os valores
+        jTextFieldValor1.setText("");
+        jTextFieldValor2.setText("");
+        jTextField3Resultado.setText("");
+    }//GEN-LAST:event_jButtonLimparActionPerformed
 
     /**
      * @param args the command line arguments
@@ -208,6 +257,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton2Subtracao;
     private javax.swing.JButton jButton3Multiplicacao;
     private javax.swing.JButton jButton4Divisao;
+    private javax.swing.JButton jButtonAlterar;
+    private javax.swing.JButton jButtonLimpar;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
