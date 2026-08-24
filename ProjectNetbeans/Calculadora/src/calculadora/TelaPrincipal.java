@@ -57,6 +57,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jTextFieldValor2.addActionListener(this::jTextFieldValor2ActionPerformed);
 
+        jTextFieldValor1.addActionListener(this::jTextFieldValor1ActionPerformed);
+
         jLabel4.setText("Resultado:");
 
         jButton1Soma.setText("SOMA");
@@ -124,7 +126,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
+                .addGap(51, 51, 51)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -143,7 +145,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addComponent(jButton2Subtracao)
                     .addComponent(jButton3Multiplicacao)
                     .addComponent(jButton4Divisao))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonAlterar)
                     .addComponent(jButtonLimpar))
@@ -225,7 +227,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jTextFieldValor1.setText("");
         jTextFieldValor2.setText("");
         jTextField3Resultado.setText("");
+        jLabel1.setText("Calculadora");
     }//GEN-LAST:event_jButtonLimparActionPerformed
+
+    private void jTextFieldValor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldValor1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldValor1ActionPerformed
 
     /**
      * @param args the command line arguments
