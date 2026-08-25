@@ -26,6 +26,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jButtonCalcular = new javax.swing.JButton();
         jButton2Limpar = new javax.swing.JButton();
         jLabel1Altura = new javax.swing.JLabel();
@@ -38,6 +39,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jTextField1Classificacao = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -220,6 +232,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel3Peso;
     private javax.swing.JLabel jLabel4Resultado;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1Classificacao;
     private javax.swing.JTextField jTextField2Altura;
     private javax.swing.JTextField jTextField2Peso;
